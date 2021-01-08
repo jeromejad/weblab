@@ -4,7 +4,9 @@
 div {
     padding: 10px;
 }
-
+.jumbotron {
+  background: linear-gradient(to bottom, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+}
 .desimg {
   width: auto;
   height: 500px;
