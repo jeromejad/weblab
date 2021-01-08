@@ -2,14 +2,9 @@
 	display : inline;
 }
 div {
-    padding: 2px;
+    padding: 10px;
 }
-a {
-    padding: 3px;
-}
-.card {
-  padding: 7px;
-}
+
 .desimg {
   width: auto;
   height: 500px;
