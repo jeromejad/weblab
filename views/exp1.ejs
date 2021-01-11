@@ -55,23 +55,44 @@
         </div>
       </div>
           <div class="row">
-            <table class="table table-striped col-6">
-              <tr>
-                <th scope="col">Firstname</th>
-                <th scope="col">Lastname</th>
-                <th scope="col">Age</th>
-              </tr>
-              <tr>
-                <td>Joey</td>
-                <td>Tribiani</td>
-                <td>50</td>
-              </tr>
-              <tr>
-                <td>Chandler</td>
-                <td>Bing</td>
-                <td>51</td>
-              </tr>
-            </table>
+            <table class="table table-striped table-bordered col-6 m-1 text-center">
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Savings</th>
+                  <th>Expenditure</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>January</td>
+                  <td>$100</td>
+                  <td rowspan="2" style="vertical-align : middle;text-align:center;">$100</td>
+                </tr>
+                <tr>
+                  <td>
+                      <table>
+                          <tr>
+                              <td>February</td>
+                              <td>march</td>
+                              <td>april</td>
+                          </tr>
+                      </table>
+                  </td>
+                  <td>$80</td>
+                  
+                </tr>
+              </tbody>
+              <tfoot>
+                
+                  <tr>
+                     <td colspan="3" style="vertical-align: auto; text-align: left;">Sum</td>
+                     
+                  </tr>
+                  
+                
+              </tfoot>
+       </table>
           </div>
       </div> 
 
@@ -90,7 +111,7 @@
           </div>
         </div>
             <div class="row">
-              <table class="table table-striped col-6">
+              <table class="table table-striped table-bordered col-6">
                 <tr>
                   <th scope="col">Firstname</th>
                   <th scope="col">Lastname</th>
@@ -124,7 +145,7 @@
             </div>
           </div>
               <div class="row">
-                <table class="table table-striped col-6">
+                <table class="table table-striped table-bordered col-6">
                   <tr>
                     <th scope="col">Firstname</th>
                     <th scope="col">Lastname</th>
