@@ -1,9 +1,7 @@
 #delete-form {
 	display : inline;
 }
-div {
-    padding: 10px;
-}
+
 .jumbotron {
   background: linear-gradient(to bottom, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
 }
@@ -23,8 +21,14 @@ div {
 	background-image: url(https://wallpapercave.com/wp/yXmbxhx.jpg); 
 }
 
-.allnav {
+.card {
+  margin :auto;
+}
 	
+.car1 {
+  border-top-color: #034da2;
+}
+
 
 }
 img {
@@ -32,10 +36,6 @@ img {
     height: 600;
 }
 
-body {
-	background-color: #EEF3F5;
-
-}
 .thumb {
 	background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); 
 }
