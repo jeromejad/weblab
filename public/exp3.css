@@ -1,6 +1,4 @@
-*{
-    margin: 0px;
-}
+
 h1{
     background-color:#034da2;
     text-align:center;
@@ -12,16 +10,17 @@ h1{
     margin:10%;
 }
 .banner{
-    background-image:url("https://i.imgur.com/WNsAYWR.png");
+    
     height:500px;
-    background-position: center;
+    
     background-size: cover;
-    background-repeat: no-repeat;
-    padding:15px;
-    margin:auto;
+    
     
 }
-
+.padin{
+  padding-top: 500px;
+  margin-top: 220px;
+}
 
 #i1{
     text-align: justify;
@@ -33,12 +32,7 @@ h1{
     padding:5px 2px 2px 2px;
     margin:1%;
 }
-.text{
-  font-size:20px;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5); 
-  color: #f1f1f1;
-}
+
 #image1{
     background-image: url("https://i.imgur.com/q9RBM87.png");
     background-size: cover;
@@ -89,17 +83,12 @@ h1{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-#image5{
-    background-image: url("https://i.imgur.com/UduikKh.png");
+.img-thumbnail{
+    
     background-size: cover;
-    float: left;
     height:250px;
     width:490px;
-    background-repeat: no-repeat;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    
 }
 #image6{
     background-image: url("https://i.imgur.com/5rsAGEG.png");
@@ -194,4 +183,8 @@ h1{
   padding: 15px;
   margin-top:198px;
 }
-
+#f1{
+   
+    text-align:center
+    font-size:40px;
+}
