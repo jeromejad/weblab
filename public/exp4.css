@@ -1,65 +1,56 @@
-*{
-    margin: 0px;
+
+.mf{
+  background-color: #337ab7;
 }
-h1{
-    background-color:lightskyblue;
-    text-align:center;
-    font-size:60px;
-    line-height:90px;
-}
-nav{
-    width:100%;
-}
-ul{
-    background-color: orange;
-    list-style-type: none;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-right: 20px;
-    
-}
-li{
-    float:left;
-}
-li a{
-    text-decoration: none;
-    font-size: 30px;
-    padding:2px 80px;
-}
-li a:hover{
-    background-color: yellow;
-    color: black;
+#mk{
+  padding:5px;
+  background-color: white;
+  width: 100%;
 }
 .c1{
     margin:10%;
 }
 .banner{
-    background-image:url(karunya1.PNG);
+    
     height:500px;
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding:15px;
+    
+    
+    
 }
+li a:hover{
+  background-color: yellow;
+  color: black;
+}
+.padin{
+  
+  margin-top: 50px;
+}
+
 #i1{
-    text-align: justify;
-    color:white;
-    line-height: 30px;
-    word-spacing: 5px;
-    font-style: italic;
-    font-size: 20px;
-    padding:5px 2px 2px 2px;
-    margin:1%;
+  text-align: justify;
+  color:white;
+  line-height: 30px;
+  word-spacing: 5px;
+  font-style: italic;
+  font-size: 20px;
+  padding:280px 2px 2px 2px;
+  margin:1%;
 }
 .text{
-  font-size:20px;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5); 
-  color: #f1f1f1;
+font-size:20px;
+position: absolute;
+background: rgba(0, 0, 0, 0.5); 
+color: #f1f1f1;
 }
+
 #image1{
-    background-image: url(Admission.PNG);
+    
+    background-size: cover;
     float: left;
     height:250px;
     width:500px;
@@ -70,11 +61,12 @@ li a:hover{
     margin-top: 20px;
 }
 #image2{
-    background-image: url(Students.PNG);
+    
+    background-size: cover;
     float: left;
     height:250px;
     width:490px;
-    background-size:cover;
+    
     box-sizing: border-box;
     background-repeat: no-repeat;
     margin-left: 10px;
@@ -83,7 +75,8 @@ li a:hover{
     margin-top: 20px;
 }
 #image3{
-    background-image: url(Hostels.PNG);
+   
+    background-size: cover;
     float: left;
     height:250px;
     width:460px;
@@ -94,7 +87,8 @@ li a:hover{
     margin-top: 20px;
 }
 #image4{
-    background-image: url(Grounds.PNG);
+    
+    background-size: contain;
     float: left;
     height:250px;
     width:505px;
@@ -104,19 +98,16 @@ li a:hover{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-#image5{
-    background-image: url(Canteen.PNG);
-    float: left;
+.img-thumbnail{
+    
+    background-size: cover;
     height:250px;
     width:490px;
-    background-repeat: no-repeat;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    
 }
 #image6{
-    background-image: url(Library.PNG);
+    
+    background-size:cover;
     float: left;
     height:250px;
     width:460px;
@@ -133,10 +124,10 @@ li a:hover{
     opacity:1,0;*/
   text-align:center;
   font-size:20px;
-  position: absolute;
+  position:relative;
   background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
-  width: 31%;
+  width: 100%;
   padding: 15px;
   margin-top:200px;
 }
@@ -151,7 +142,7 @@ li a:hover{
   position: absolute;
   background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
-  width: 30%;
+  width: 100%;
   padding: 15px;
   margin-top:197px;
 }
@@ -166,7 +157,7 @@ li a:hover{
   position: absolute;
   background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
-  width: 28.4%;
+  width: 100%;
   padding: 15px;
   margin-top:197px;
 }
@@ -181,43 +172,34 @@ li a:hover{
   position: absolute;
   background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
-  width: 31.3%;
+  width: 100%;
   padding: 15px;
   margin-top:197px;
 }
 #r5{  
-  /*  background-color: grey;
-    margin-top:216px;
-    font-size:30px;
-    opacity:1,0;
-    text-align:center;*/
+ 
   text-align:center;
   font-size:20px;
   position: absolute;
   background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
-  width: 30.3%;
+  width: 100%;
   padding: 15px;
   margin-top:197px;
 }
 #r6{  
-    /*background-color: grey;
-    margin-top:216px;
-    font-size:30px;
-    opacity:1,0;
-    text-align:center;*/
+    
   text-align:center;
   font-size:20px;
   position: absolute;
   background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
-  width: 28.3%;
+  width: 100%;
   padding: 15px;
   margin-top:198px;
 }
 #f1{
-    background-color: lightsteelblue;
-    text-align:center;
+   
+    text-align:center
     font-size:40px;
-    padding:5px 5px 5px 5px;
 }
