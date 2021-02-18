@@ -1,6 +1,4 @@
-*{
-    margin: 0px;
-}
+
 h1{
     background-color:#034da2;
     text-align:center;
@@ -8,9 +6,7 @@ h1{
     line-height:90px;
 }
 
-.c1{
-    margin:10%;
-}
+
 .banner{
     background-image:url("https://i.imgur.com/WNsAYWR.png");
     height:500px;
@@ -24,7 +20,7 @@ h1{
 
 
 #i1{
-    text-align: justify;
+    text-align:center;
     color:white;
     line-height: 30px;
     word-spacing: 5px;
@@ -35,7 +31,7 @@ h1{
 }
 .text{
   font-size:20px;
-  position: absolute;
+  position:absolute;
   background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
 }
