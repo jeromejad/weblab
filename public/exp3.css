@@ -13,24 +13,38 @@ h1{
     
     height:500px;
     
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    padding:15px;
+    
     
     
 }
+li a:hover{
+  background-color: yellow;
+  color: black;
+}
 .padin{
-  padding-top: 500px;
-  margin-top: 220px;
+  
+  margin-top: 50px;
 }
 
 #i1{
-    text-align: justify;
-    color:white;
-    line-height: 30px;
-    word-spacing: 5px;
-    font-style: italic;
-    font-size: 20px;
-    padding:5px 2px 2px 2px;
-    margin:1%;
+  text-align: justify;
+  color:white;
+  line-height: 30px;
+  word-spacing: 5px;
+  font-style: italic;
+  font-size: 20px;
+  padding:280px 2px 2px 2px;
+  margin:1%;
+}
+.text{
+font-size:20px;
+position: absolute;
+background: rgba(0, 0, 0, 0.5); 
+color: #f1f1f1;
 }
 
 #image1{
