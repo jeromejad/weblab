@@ -28,6 +28,6 @@ app.post('/result', (req, res) =>{
     res.render("exp2/result")
 } );
 
-app.listen(process.env.PORT,process.env.IP, function(){
+app.listen(3000, function(){
 	console.log("hello");
 });
