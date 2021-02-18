@@ -21,6 +21,9 @@ app.get('/exp2', (req, res) =>{
 app.get('/exp3', (req, res) =>{
     res.render("exp3/exp3")
 } );
+app.get('/exp4', (req, res) =>{
+    res.render("exp4/exp4")
+} );
 app.post('/result', (req, res) =>{
     res.render("exp2/result")
 } );
