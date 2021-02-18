@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+}
+h1{
+    background-color:#034da2;
+    text-align:center;
+    font-size:60px;
+    line-height:90px;
+}
+nav{
+    width:100%;
+}
+ul{
+    background-color: orange;
+    list-style-type: none;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    
+}
+li{
+    float:left;
+}
+li a{
+    text-decoration: none;
+    font-size: 30px;
+    padding:2px 80px;
+}
+li a:hover{
+    background-color: yellow;
+    color: black;
+}
+.c1{
+    margin:10%;
+}
+.banner{
+    background-image:url("https://i.imgur.com/WNsAYWR.png");
+    height:500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:15px;
+}
+#i1{
+    text-align: justify;
+    color:white;
+    line-height: 30px;
+    word-spacing: 5px;
+    font-style: italic;
+    font-size: 20px;
+    padding:5px 2px 2px 2px;
+    margin:1%;
+}
+.text{
+  font-size:20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+}
+#image1{
+    background-image: url("https://i.imgur.com/q9RBM87.png");
+    float: left;
+    height:250px;
+    width:500px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#image2{
+    background-image: url("https://i.imgur.com/DTsV9iw.png");
+    float: left;
+    height:250px;
+    width:490px;
+    background-size:cover;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#image3{
+    background-image: url("https://i.imgur.com/5rsAGEG.png");
+    float: left;
+    height:250px;
+    width:460px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#image4{
+    background-image: url("https://i.imgur.com/sD70Nys.png");
+    float: left;
+    height:250px;
+    width:505px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#image5{
+    background-image: url("https://i.imgur.com/UduikKh.png");
+    float: left;
+    height:250px;
+    width:490px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#image6{
+    background-image: url("https://i.imgur.com/5rsAGEG.png");
+    float: left;
+    height:250px;
+    width:460px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#r1{  
+   /* background-color: grey;
+    margin-top:216px;
+    font-size:30px;
+    opacity:1,0;*/
+  text-align:center;
+  font-size:20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 31%;
+  padding: 15px;
+  margin-top:200px;
+}
+#r2{  
+   /* background-color: grey;
+    margin-top:216px;
+    font-size:30px;
+    opacity:1,0;
+    text-align:center;*/
+  text-align:center;
+  font-size:20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 30%;
+  padding: 15px;
+  margin-top:197px;
+}
+#r3{  
+    /*background-color: grey;
+    margin-top:216px;
+    font-size:30px;
+    opacity:1,0;
+    text-align:center;*/
+  text-align:center;
+  font-size:20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 28.4%;
+  padding: 15px;
+  margin-top:197px;
+}
+#r4{  
+   /* background-color: grey;
+    margin-top:216px;
+    font-size:30px;
+    opacity:1,0;
+    text-align:center;*/
+  text-align:center;
+  font-size:20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 31.3%;
+  padding: 15px;
+  margin-top:197px;
+}
+#r5{  
+  /*  background-color: grey;
+    margin-top:216px;
+    font-size:30px;
+    opacity:1,0;
+    text-align:center;*/
+  text-align:center;
+  font-size:20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 30.3%;
+  padding: 15px;
+  margin-top:197px;
+}
+#r6{  
+    /*background-color: grey;
+    margin-top:216px;
+    font-size:30px;
+    opacity:1,0;
+    text-align:center;*/
+  text-align:center;
+  font-size:20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 28.3%;
+  padding: 15px;
+  margin-top:198px;
+}
+#f1{
+    background-color: #034da2;
+    text-align:center;
+    font-size:40px;
+    padding:5px 5px 5px 5px;
+}

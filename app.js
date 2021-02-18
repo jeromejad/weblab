@@ -18,6 +18,9 @@ app.get('/admission', (req, res) =>{
 app.get('/exp2', (req, res) =>{
     res.render("exp2/exp2")
 } );
+app.get('/exp3', (req, res) =>{
+    res.render("exp3/exp3")
+} );
 app.post('/result', (req, res) =>{
     res.render("exp2/result")
 } );
