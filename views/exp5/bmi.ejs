@@ -3,8 +3,56 @@
 	<head>
 		<meta charset="utf-8">
 		<title>BMI Calculator</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
         <script src="scripts/bmi.js" defer></script>
 	</head>
+    <header>
+        <div class=" container-fluid p-0 mf">
+            <div class="text-center">
+                <div class=" text-center column-center">
+                    <div class="class="logo>
+                        <a href="/exp3">
+                            <img height="80" src="https://www.karunya.edu/sites/default/files/logo.png.pagespeed.ce.WjgALcfVm7.png"></img>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mk"> </div>
+        <div class="container">
+        
+          <div class="container mf">
+              <nav  class="navbar navbar-expand-lg navbar-primary  text-center justify-content-between allnav ">
+            <a class="navbar-brand p-0" href="/exp5">Karunya University</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                                    
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                 <a class="nav-link " href="/exp5">Home <span class="sr-only">(current)</span></a>
+              </li>
+                
+              <li class="nav-item active">
+                 <a class="nav-link" href="/exp5">Calculator</a>
+              </li>
+             <li class="nav-item active">
+                 <a class="nav-link" href="/bmi"> BMI</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/currency"> Currency</a>
+             </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="/exp5"> URK18CS180</a>
+             </li>
+            </ul>
+        
+        </div>
+            </div>
+          </nav></div>
+    </header>
 	<style media="screen">
 		body{
 			margin: 0;
@@ -14,7 +62,7 @@
 			background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
 			min-height: 100vh;
 		}
-		div{
+		.d{
 			width: 500px;
 			position: absolute;
 			top: 50%;
@@ -29,7 +77,7 @@
 			font-size: 30px;
 			font-weight: 600;
 		}
-		.text{
+		.text1{
 			text-align: left;
 			margin-left: 150px;
 		}
@@ -74,11 +122,12 @@
 	</style>
 	
 	<body>
-		<div>
+        
+		<div class="d">
 			<h2>BMI Calculator</h2>
-			<p class="text">Height</p>
+			<p class="text1">Height</p>
 			<input type="text" id="h">
-			<p class="text">Weight</p>
+			<p class="text1">Weight</p>
 			<input type="text" id="w">
 			<p id="result"></p>
 			<button id="btn" onClick="BMI()">Calculate</button>
