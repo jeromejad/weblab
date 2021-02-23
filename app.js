@@ -27,7 +27,15 @@ app.get('/exp4', (req, res) =>{
 app.post('/result', (req, res) =>{
     res.render("exp2/result")
 } );
-
-app.listen(process.env.PORT,process.env.IP, function(){
+app.get('/exp5', (req, res) =>{
+    res.render("exp5/exp5")
+} );
+app.get('/bmi', (req, res) =>{
+    res.render("exp5/bmi")
+} );
+app.get('/currency', (req, res) =>{
+    res.render("exp5/currency")
+} );
+app.listen(process.env.port,process.env.IP, function(){
 	console.log("hello");
 });
