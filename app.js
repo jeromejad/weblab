@@ -36,6 +36,6 @@ app.get('/bmi', (req, res) =>{
 app.get('/currency', (req, res) =>{
     res.render("exp5/currency")
 } );
-app.listen(process.env.port,process.env.IP, function(){
+app.listen(process.env.PORT,process.env.IP, function(){
 	console.log("hello");
 });
