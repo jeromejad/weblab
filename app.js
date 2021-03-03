@@ -45,6 +45,12 @@ app.get('/car', (req, res) =>{
 app.get('/math', (req, res) =>{
     res.render("exp6/math")
 } ); 
+app.get('/maze', (req, res) =>{
+    res.render("assign/maze_game")
+} ); 
+app.get('/clock', (req, res) =>{
+    res.render("assign/clock")
+} ); 
 app.listen(process.env.PORT,process.env.IP, function(){
 	console.log("hello");
 });

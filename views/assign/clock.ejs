@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
+  
+  <script src="scripts/exp6.js" defer></script>
+  <style>
+      body {
+  -webkit-animation: bgcolorchange 4s infinite; /* Chrome, Safari, Opera */ 
+  animation: 4s infinite bgcolorchange;
+}
+@keyframes bgcolorchange {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+/* Chrome, Safari, Opera */
+ @-webkit-keyframes bgcolorchange {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      75%  {background: green;}
+      100% {background: blue;}
+ }
+ .clock {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
+.mf{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+}
+.mk{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+#column3 {
+  z-index: 1;
+    position: relative;
+    text-align: center;
+    margin-top:10%;
+    font-family: sans-serif;
+    color:ivory;
+    background-color:lightcoral;
+}
+ body {
+  background: black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+
+.clock {
+    margin-top: 25%;
+  height: 20vh;
+  color: white;
+  font-size: 22vh;
+  font-family: sans-serif;
+  line-height: 20.4vh;
+  display: flex;
+  position: relative;
+  /*background: green;*/
+  overflow: hidden;
+}
+
+.clock::before, .clock::after {
+  content: '';
+  width: 7ch;
+  height: 3vh;
+  background: linear-gradient(to top, transparent, black);
+  position: absolute;
+  z-index: 2;
+}
+
+.clock::after {
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, black);
+}
+
+.clock > div {
+  display: flex;
+}
+
+.tick {
+  line-height: 17vh;
+}
+
+.tick-hidden {
+  opacity: 0;
+}
+
+.move {
+  animation: move linear 1s infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-20vh);
+  }
+}
+
+  </style>
+</head>
+<header>
+    <div class=" container-fluid p-0 mf">
+      <div class="text-center">
+          <div class=" text-center column-center">
+              <div class="class="logo>
+                  <a href="/exp3">
+                      <img class="img-fluid" alt="Responsive image" src="https://www.karunya.edu/sites/default/files/logo.png.pagespeed.ce.WjgALcfVm7.png"></img>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id=""> </div>
+  <div class="mk">
+  
+    <div class="mk">
+        <nav  class="navbar navbar-expand-lg navbar-primary  text-center justify-content-between allnav ">
+      <a class="navbar-brand p-0" href="/exp6">Karunya University</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                              
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+           <a class="nav-link " href="/exp6">Home <span class="sr-only">(current)</span></a>
+        </li>
+       <li class="nav-item active">
+           <a class="nav-link" href="/maze"> Maze Game</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/clock"> Clock</a>
+       </li>
+       <li class="nav-item active">
+          <a class="nav-link" href="/clock"> URK18CS180</a>
+       </li>
+      </ul>
+  
+  </div>
+      </div>
+    </nav></div>
+  </header>
+<body >
+    <div class="clock">
+        <div class="hours">
+          <div class="first">
+            <div class="number">0</div>
+          </div>
+          <div class="second">
+            <div class="number">0</div>
+          </div>
+        </div>
+        <div class="tick">:</div>
+        <div class="minutes">
+          <div class="first">
+            <div class="number">0</div>
+          </div>
+          <div class="second">
+            <div class="number">0</div>
+          </div>
+        </div>
+        <div class="tick">:</div>
+        <div class="seconds">
+          <div class="first">
+            <div class="number">0</div>
+          </div>
+          <div class="second infinite">
+            <div class="number">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="column3">
+        Hover to enlarge
+      </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
