@@ -36,6 +36,15 @@ app.get('/bmi', (req, res) =>{
 app.get('/currency', (req, res) =>{
     res.render("exp5/currency")
 } );
+app.get('/exp6', (req, res) =>{
+    res.render("exp6/exp6")
+} );
+app.get('/car', (req, res) =>{
+    res.render("exp6/car")
+} );
+app.get('/math', (req, res) =>{
+    res.render("exp6/math")
+} ); 
 app.listen(process.env.PORT,process.env.IP, function(){
 	console.log("hello");
 });
