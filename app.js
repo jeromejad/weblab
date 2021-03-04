@@ -51,6 +51,21 @@ app.get('/maze', (req, res) =>{
 app.get('/clock', (req, res) =>{
     res.render("assign/clock")
 } ); 
+app.get('/exp7', (req, res) =>{
+    res.setHeader('content-type', 'text/xml');
+    res.render("exp7/exp7");
+    
+} ); 
+app.get('/exp71', (req, res) =>{
+    res.setHeader('content-type', 'text/xml');
+    res.render("exp7/exp71");
+    
+} ); 
+app.get('/exp72', (req, res) =>{
+    res.setHeader('content-type', 'text/xml');
+    res.render("exp7/exp72");
+    
+} ); 
 app.listen(process.env.PORT,process.env.IP, function(){
 	console.log("hello");
 });
