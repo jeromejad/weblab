@@ -30,7 +30,7 @@ app.use(passport.session());
 app.use(flash());
 
 var monk = require('monk');
-var db = monk('mongodb+srv://jerome:<password>@cluster0.oowlp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+var db = monk('mongodb+srv://jerome:jerome2000@cluster0.oowlp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 var index = require('./controllers/index');
 var students = require('./controllers/students');
