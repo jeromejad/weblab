@@ -1,58 +1,88 @@
-body {
-  padding: 30px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.answer{
+    padding: 15px 20px;
+    border-radius: 10px;
+    border:1px solid #bbb;
+}
+.answer:hover{
+    cursor: pointer;
+}
+.bg-4 { 
+    background-image: url("https://wallpapercave.com/wp/LxjRT4o.jpg");
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+    background-attachment: fixed;
+}
+.admin{
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+    background-attachment: fixed;
+}
+#txtclr{
+    color: white;
 }
 
-h2 {
-	margin:0 0 .5em 0;
+#ques{
+    color: black
+}
+div#footer{
+	padding:10px;
+	color:white;
+	background-color:black;
+    text-align:center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
-a {
-  color: #00B7FF;
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+      padding: 10px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+      padding: 10px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa-github {
+    color: white;
+      padding: 10px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+a:hover#fb{
+	text-shadow: 0 0 8px #2D44EF;
+}
+a:hover#footer{
+	text-shadow: 0 0 1px #FFFFFF;
+}
+.fa-linkedin:hover {
+    opacity: 0.7;
 }
 
-#wrapper {
-	padding-left:312px;
-	position:relative;
+.fa-facebook:hover {
+    opacity: 0.7;
 }
+ .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 
-#questionList {
-	margin:0 0 30px 0;
-}
-	#questionList table {
-		border-collapse:separate;
-		border-spacing:1px;
-		background:#CCC;
-	}
-		#questionList table th {
-			background:#EEE;
-			font-weight:600;
-			padding:10px 20px;
-			text-align:center;
-		}
-		#questionList table tbody {
-			padding:0; margin:0;
-			border-collapse:collapse;
-			border-spacing:0px;
-		}
-			#questionList table td {
-				background:#FFF;
-				padding:5px 10px;
-				text-align:center;
-			}
+ }
 
-#questionBox {
-	width:250px;
-	position:absolute;
-	top:0; left:0;
-}
-	#questionBox p {
-		padding:15px;
-		border:1px solid #CCC;
-		background:rgba(80,120,255,0.05);
-	}
-
-fieldset {
-	border:0;
-	padding:0; margin:0;
-}
+ .cntr{
+     text-align: center;
+ }
