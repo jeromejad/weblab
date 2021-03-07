@@ -13,9 +13,8 @@ var http = require('http');
  */
 
 
-app.listen(process.env.PORT,process.env.IP, function(){
-	console.log("hello");
-});
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
 		
 
 /**
