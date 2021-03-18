@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$(".register-btn").on("click", function(){
 
 		$.ajax({
-			url : '../admin/classes/Credentials.php',
+			url : 'admin/classes/Credentials.php',
 			method : "POST",
 			data : $("#admin-register-form").serialize(),
 			success : function(response){
@@ -23,7 +23,7 @@ $(document).ready(function(){
 	$(".login-btn").on("click", function(){
 
 		$.ajax({
-			url : '../admin/classes/Credentials.php',
+			url : 'admin/classes/Credentials.php',
 			method : "POST",
 			data : $("#admin-login-form").serialize(),
 			success : function(response){
