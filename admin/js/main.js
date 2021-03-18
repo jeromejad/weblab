@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 		$.ajax({
 			url : '../admin/classes/Credentials.php',
-			method : "POST",
+			method : "GET",
 			data : $("#admin-register-form").serialize(),
 			success : function(response){
 				console.log(response);
@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 		$.ajax({
 			url : '../admin/classes/Credentials.php',
-			method : "POST",
+			method : "GET",
 			data : $("#admin-login-form").serialize(),
 			success : function(response){
 				console.log(response);
