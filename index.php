@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <script src="js/main.js" type="text/javascript"></script>
-        <script src="js/jquery-1.12.0.min.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
