@@ -3,8 +3,9 @@
     <form id="register-form" action="" method="post" role="form">
         <div class="input-row">
             <span id="first-name-info"></span> <input type="text"
-                name="first-name" id="first-name" class="input-field"
-                placeholder="First Name" value="">
+                name="first-name" id="name" class="input-field"
+                placeholder="First Name" value="" onblur = "checkUser(this.value)">
+                <div id="txt"></div>
         </div>
         <div class="input-row">
             <span id="last-name-info"></span> <input type="text"
@@ -46,3 +47,17 @@
         style="display: none"></div>
 
 </div>
+
+<script>
+function checkUser(str) {
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET","check-username.php?name="+str, true);
+        xmlhttp.send(); 
+        
+        xmlhttp.onreadystatechange = function() {            
+            if (this.readyState == 4 && this.status == 200) {
+                     document.getElementById('txt').innerHTML = this.responseText;
+                }
+        };        
+}
+</script>
