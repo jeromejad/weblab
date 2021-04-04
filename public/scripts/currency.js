@@ -340,7 +340,7 @@ fetch(dataURL)
   .then(res => res.json())
   .then(data => {
     document.querySelector(".date").textContent = data.date;
-    data.rates["EUR"] = 1;
+    data.rates["USD"] = 1;
     currencies = currencies.filter(currency => data.rates[currency.abbreviation]);
     currencies.forEach(currency => currency.rate = data.rates[currency.abbreviation]);
     populateAddCyrrencyList();
