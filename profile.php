@@ -34,6 +34,6 @@ endif;
   <!-- Close container -->
 
    <script src="jquery.min.js"></script> 
-   <script src="app.js"></script>
+   <script src="new.js"></script>
 </body>
 </html>
