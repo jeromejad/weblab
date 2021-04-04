@@ -3,7 +3,7 @@ const addCurrencyBtn = document.querySelector(".add-currency-btn");
 const addCurrencyList = document.querySelector(".add-currency-list");
 const currenciesList = document.querySelector(".currencies");
 
-const dataURL = "https://api.exchangeratesapi.io/latest";
+const dataURL = "http://api.exchangeratesapi.io/v1/latest?access_key=0312ec60394f139865c37716c3779836";
 
 const initiallyDisplayedCurrencies = ["USD", "INR"];
 let baseCurrency;
@@ -340,7 +340,7 @@ fetch(dataURL)
   .then(res => res.json())
   .then(data => {
     document.querySelector(".date").textContent = data.date;
-    data.rates["USD"] = 1;
+    data.rates["EUR"] = 1;
     currencies = currencies.filter(currency => data.rates[currency.abbreviation]);
     currencies.forEach(currency => currency.rate = data.rates[currency.abbreviation]);
     populateAddCyrrencyList();
