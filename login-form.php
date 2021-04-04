@@ -1,29 +1,24 @@
-<form class="contact-form" action="" method="POST" onclick="return false;">
-    <fieldset>
-        <legend>AJAX Login Form</legend>
-        
-          <div id="login-response" class="response_error"></div>
-        
-        <div>
-            <span id="login-response"></span>
+<div id="login-dialog" title="Login Dialog Form" style="display: none;">
+    <form id="login-form" action="" method="post" role="form">
+        <div class="input-row">
+            <span id="email-info"></span> <input type="email"
+                name="login-email-id" id="login-email-id"
+                class="input-field" placeholder="Email ID">
         </div>
-        
-        <div>
-            <label for="name">Username</label> 
-            <input type="text" name="username" id="username" placeholder="username">
+        <div class="input-row">
+            <span id="password-info"></span> <input type="password"
+                name="login-password" id="login-password"
+                class="input-field" placeholder="Password">
         </div>
+        <input type="button" class="btn-submit" value="Log In"
+            onclick="ajaxLogin()">
+    </form>
 
-          <div>
-            <label for="email">Password</label> 
-            <input type="password" name="password" id="password" placeholder="Password">
-        </div>
-
-
-        <div>
-
-            <input type="submit" value="Login" onmousedown="login();">
-          
-        </div>
-
-    </fieldset>
-</form>
+    <div class="success-message" id="login-success-message"
+        style="display: none"></div>
+    <div class="error-message" id="login-error-message"
+        style="display: none"></div>
+    <div id="ajaxloader" style="display: none">
+        <img src="LoaderIcon.gif" id="loaderId" />
+    </div>
+</div>
