@@ -5,7 +5,7 @@ session_start();
 <html>
 <head>
 
-<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="./vendor/jquery/jquery-3.2.1.min.js"></script>
 
 <link rel="stylesheet" href="style.css">
 
