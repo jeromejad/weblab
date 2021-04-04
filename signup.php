@@ -1,83 +1,41 @@
 <?php
-include "db.php";
 
-if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])){
+$conn = new mysqli("bnjhz69tzqtptkhxejq4-mysql.services.clever-cloud.com", "uixodnli2w95t7oa", "WDZfqukULNtn9LzL9tJl");
+$conn->select_db("bnjhz69tzqtptkhxejq4");
 
 
-    $name = trim($_POST['name']);
-    $email = trim($_POST['email']);
-    $password = password_hash(trim($_POST['password']), PASSWORD_DEFAULT);
+if (empty($_POST['username']) || empty($_POST['email']) || empty($_POST['password']) || empty($_FILES["profile"]["name"])) {
+    echo "All the field are required";
+} 
+else {
 
-    $checkEmail = $db->prepare("SELECT email FROM users WHERE email = ?");
-    $checkEmail->execute([$email]);
-    if($checkEmail->rowCount() > 0 ){
-        echo json_encode(['status' => 'error', 'message' => 'Sorry this email is already taken']);
+    
+    
+$fileName = $_FILES["profile"]["name"];
+$fileTmpLoc = $_FILES["profile"]["tmp_name"];
+$fileType = $_FILES["profile"]["type"];
+$fileSize = $_FILES["profile"]["size"];
+$fileErrorMsg = $_FILES["profile"]["error"];
+
+$username = $_POST["username"];
+$email = $_POST["email"];
+$password = $_POST["password"];
+
+    $insert_query = $conn->query("INSERT INTO user (username, email, password) VALUES('$username' ,'$email' ,'$password')");
+    if ($insert_query == true) {
+
+        //upload the file
+        $pid = $conn->insert_id;
+        $newName = "$pid.jpg";
+        if (move_uploaded_file($fileTmpLoc, "./uploads/$newName")) {
+            $responce = "Succesfull , thank for your registration";
+        } else {
+            $responce = "Failed";
+        }
+
+        echo "Thanks for Signing up!";
     } else {
-     $Query = $db->prepare("INSERT INTO users (name, email, password) VALUES (?,?,?)");
-     $Query->execute([$name, $email, $password]);
-     if($Query){
-         $_SESSION['created'] = "Your account has been created successfully";
-         echo json_encode(['status' => 'success']);
-     }
+        echo "Someting goes wrong!";
     }
-
 }
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ajax Signup</title>
-    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
-</head>
-<body>
-  <div class="container">
-  <div class="row">
-  <div class="col-md-5 mx-auto mt-5">
-  <div class="card">
-  <div class="card-header">
-  <h3>Signup User</h3>
-  </div>
-  <div class="card-body">
-  <form>
-  <div class="form-group">
-  <input type="text" id="name" class="form-control name" placeholder="Name">
-  <div class="invalid-feedback" style="font-size:16px;">Name is required</div>
-  </div>
-  <!-- Close form-group -->
-  <div class="form-group">
-  <input type="email" id="email" class="form-control email" placeholder="Email">
-  <div class="invalid-feedback emailError" style="font-size:16px;">Email is required</div>
-  </div>
-  <!-- Close form-group -->
-  <div class="form-group">
-  <input type="password" id="password" class="form-control password" placeholder="Password">
-  <div class="invalid-feedback" style="font-size:16px;">Password is required</div>
-  </div>
-  <!-- Close form-group -->
-  <div class="form-group">
-   <button type="button" id="signup" class="btn btn-info">Signup &rarr;</button>
-   <a href="login.php" style="float:right;margin-top:10px;">Already have an account ?</a>
-  </div>
-  <!-- Close form-group -->
-  </form>
-  </div>
-  <!-- Close card-body -->
-  </div>
-  <!-- Close card -->
-  </div>
-  <!-- Close col-md-5 -->
-  </div>
-  <!-- Close row -->
-  </div>
-  <!-- Close container -->
-
-   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script> 
-   <script src="new.js"></script>
-</body>
-</html>
+?>
