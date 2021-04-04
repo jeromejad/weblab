@@ -54,7 +54,7 @@ session_start();
 
 <body>
     <div class="demo-container">
-        <h2>AJAX based Login Registration System with jQuery Lightbox</h2>
+        <h2>AJAX based Login Registration System </h2>
         <div class="login-registration-menu">
             <input type="button" value="Login" id="btn-login"> <input
                 type="button" value="Register" id="btn-register">
