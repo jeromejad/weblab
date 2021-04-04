@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exp6</title>
+    <title>Exp10</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
   <link href="main.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -62,10 +62,10 @@
 <fieldset>
 <legend>Simple Calculator</legend>
 Number 1: <input type="text" ng-model="num1"><br> Number 2: <input type="text" ng-model="num2"><br><br>
-<input type="button" value="add" ng-click="add()">
-<input type="button" value="sub" ng-click="sub()">
-<input type="button" value="mul" ng-click="mul()">
-<input type="button" value="div" ng-click="div()">
+<input class="btn btn-outline-dark btn-sm" type="button" value="add" ng-click="add()">
+<input class="btn btn-outline-dark btn-sm" type="button" value="sub" ng-click="sub()">
+<input class="btn btn-outline-dark btn-sm" type="button" value="mul" ng-click="mul()">
+<input class="btn btn-outline-dark btn-sm" type="button" value="div" ng-click="div()">
 <p>The result is  {{res}}</p>
 </fieldset>
 </div>
