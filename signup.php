@@ -89,7 +89,7 @@
     color: white; 
     font-size: 20px;text-align: center;" type="submit" value="Sign Up"> 
         <div id="question" style="text-align:center;color:white; margin-top:10px;">Already registered?</div> 
-        <a href="login.php" style="text-align:center;color:white;font-size: 15px; font-weight:normal;">Login</a> 
+        <a href="index.php" style="text-align:center;color:white;font-size: 15px; font-weight:normal;">Login</a> 
     </form> 
     <div class="footer"></div> 
     

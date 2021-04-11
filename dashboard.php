@@ -28,7 +28,7 @@
  
     }
     </style>
-<body> <div style="position:absolute; right:20px;"><a style="text-decoration:none; background-color:red; color:white; padding:5px 8px; border-radius:100px;" href="login.php">Log Out</a></div>
+<body> <div style="position:absolute; right:20px;"><a style="text-decoration:none; background-color:red; color:white; padding:5px 8px; border-radius:100px;" href="index.php">Log Out</a></div>
    <span style="color:red;font-weight: bold;text-transform: uppercase;"> <?php 
    session_start(); 
          
