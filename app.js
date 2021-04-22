@@ -7,7 +7,8 @@ var passport        = require("passport"),      //Authentication
 	methodOverride  = require("method-override"),
 	flash           = require("connect-flash");
 	var mongoose = require("mongoose");
-mongoose.connect('mongodb+srv://jerome:jerome2000@cluster0.oowlp.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+	var mongooseenv = process.env.MONGOOSENAME;
+mongoose.connect(mongooseenv , {
 	useNewUrlParser : true,
 	useUnifiedTopology : true
 });
