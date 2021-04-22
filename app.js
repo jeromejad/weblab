@@ -1,18 +1,18 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
-
+require('dotenv').config();
 var passport        = require("passport"),      //Authentication
 	LocalStrategy   = require("passport-local"),
 	methodOverride  = require("method-override"),
 	flash           = require("connect-flash");
 	var mongoose = require("mongoose");
-	var mongooseenv = process.env.MONGOOSENAME;
+	var mongooseenv = process.env.MONGOOSE_NAME;
 mongoose.connect(mongooseenv , {
 	useNewUrlParser : true,
 	useUnifiedTopology : true
 });
-require('dotenv').config();
+
 
 //Routes
 var commentRoutes = require("./routes/comments.js");
