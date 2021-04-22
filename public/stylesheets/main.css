@@ -1,0 +1,33 @@
+#delete-form {
+	display : inline;
+}
+
+.desimg {
+  width: auto;
+  height: 500px;
+  object-fit: contain;
+}
+
+.indximg{
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+}
+
+.indxj {
+	background-image: url(https://wallpapercave.com/wp/yXmbxhx.jpg); 
+}
+
+.allnav {
+	
+
+}
+
+body {
+	background-color: #EEF3F5;
+
+}
+.thumb {
+	background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); 
+}
+

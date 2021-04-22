@@ -1,0 +1,26 @@
+<%- include ("../partials/header") %>
+
+
+<div class="container-fluid text-center">
+ <div class="form-group pt_3">
+	<h1 class="py-2">
+	Add a Comment about <%=campground.name%>
+   </h1>
+	
+  <form action="/campground/<%=campground._id%>/comments" method="post">
+	  <div class="form-group "> 
+		 
+	   <input style="width: 50%; margin: 0 auto;" class="form-control" type="text" id="acd" name="comment[text]" placeholder="Enter your comment">
+	  </div>
+	<div class="form-group"> 
+	  <button class="btn btn-primary w-50">
+		Submit!
+	</button>
+	  </div>
+	<a href="/">Go Back</a>
+  </form>
+ </div>
+</div>
+
+
+<%- include ("../partials/footer") %>

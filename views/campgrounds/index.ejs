@@ -1,0 +1,48 @@
+<%- include ("../partials/header") %>
+<div class="container">	
+	<div class="p-2">
+		<div class="jumbotron indxj">
+	<div class="container text-center">
+      <h1>
+	    This is the F.R.I.E.N.D.S page
+      </h1>
+		<p>
+			We have listed some of the F.R.I.E.N.D.S
+		</p>
+	
+	 <a href="/campground/new" class="btn btn-light">Create a F.R.I.E.N.D</a>
+	 </div>
+ </div>
+		
+	</div>
+ 
+	<div class="row text-canter" style="display:flex; flex-wrap:wrap;"> 
+		
+		<% campground.forEach(function(campground){%>
+		<div class="col-md-3 col-sm-6 text-center p-2"> 
+			<div class="card text-center thumb p-1">
+				 <img class="card-img-top indximg" src="<%=campground.image%>"> 
+					<div class="card-body p-1">
+						 <div class="card-title p-0">
+				           <h4 class="p-0">
+							   <a href="/campground/<%=campground._id %>"><%=campground.name%></a>
+				             
+				           </h4>
+			            </div>
+						
+					  
+
+					</div>
+         
+			  
+			</div>
+		
+		</div>
+		  
+			
+		  
+<%})%>
+	</div>
+
+</div>
+<%- include ("../partials/footer") %>
